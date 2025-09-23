@@ -9,7 +9,8 @@ import {
   Target,
   Clock,
   Award,
-  Brain
+  Brain,
+  GraduationCap
 } from "lucide-react";
 
 const ServicesSection = () => {
@@ -43,6 +44,12 @@ const ServicesSection = () => {
       title: "Support & Maintenance",
       description: "Comprehensive support and maintenance services to ensure your systems operate at peak performance.",
       highlights: ["24/7 Technical Support", "Preventive Maintenance", "System Updates", "Training Programs"]
+    },
+    {
+      icon: GraduationCap,
+      title: "Training and Development",
+      description: "Comprehensive training programs to empower your team with the skills needed to excel in digital innovation.",
+      highlights: ["Technical Skills Development", "Custom Training Programs", "Hands-on Workshops", "Certification Support"]
     }
   ];
 
