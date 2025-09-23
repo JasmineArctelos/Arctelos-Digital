@@ -56,8 +56,12 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-secondary/30 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-t from-muted/30 via-background to-muted/20 relative">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-32 right-16 w-80 h-80 border border-primary/10 rounded-full"></div>
+        <div className="absolute bottom-40 left-16 w-60 h-60 border border-primary/15 rounded-full"></div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Get in Touch

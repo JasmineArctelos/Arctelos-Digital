@@ -88,8 +88,12 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-secondary/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-b from-background to-muted/50 relative">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 right-10 w-64 h-64 border border-primary/20 rounded-full"></div>
+        <div className="absolute bottom-20 left-10 w-48 h-48 border border-primary/10 rounded-full"></div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Our Product Portfolio

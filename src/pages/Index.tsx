@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
       <Hero />
       <ProductsSection />
       <ServicesSection />
