@@ -8,11 +8,18 @@ import {
   ArrowRight,
   Target,
   Clock,
-  Award
+  Award,
+  Brain
 } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
+    {
+      icon: Brain,
+      title: "AI-Driven Data Analytics",
+      description: "Transforming raw device data into actionable insights for healthcare, defence, automotive, and industrial applications.",
+      highlights: ["Smart Device Integration", "Predictive & Preventive Solutions", "Custom Electronics & IoT Development", "Machine Learning Analytics"]
+    },
     {
       icon: Lightbulb,
       title: "Custom Design & Development",
