@@ -53,9 +53,9 @@ const Hero = () => {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Advanced Digital Solutions for
+            Powering Precision Through
             <span className="block bg-gradient-to-r from-white to-primary-glow bg-clip-text text-transparent">
-              Healthcare & Defense
+              Smart Digital Innovation
             </span>
           </h1>
           
