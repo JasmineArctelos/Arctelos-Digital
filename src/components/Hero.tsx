@@ -29,11 +29,11 @@ const Hero = () => {
             loop: true,
           }}
         >
-          <CarouselContent className="h-full">
+          <CarouselContent className="h-full -ml-0">
             {heroImages.map((image, index) => (
-              <CarouselItem key={index} className="relative h-full">
+              <CarouselItem key={index} className="relative h-screen min-h-screen pl-0">
                 <div 
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"
                   style={{ backgroundImage: `url(${image.src})` }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/80 via-primary/70 to-primary-dark/80" />
