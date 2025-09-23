@@ -1,17 +1,56 @@
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { ArrowRight, Cpu, Radio, Shield } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import heroTank from "@/assets/hero-tank.jpg";
+import heroSatellite from "@/assets/hero-satellite.jpg";
+import heroHealthcare from "@/assets/hero-healthcare.jpg";
 
 const Hero = () => {
+  const heroImages = [
+    { src: heroTank, alt: "Defense Technology - Battle Tank" },
+    { src: heroSatellite, alt: "Satellite Technology - GPS Systems" },
+    { src: heroHealthcare, alt: "Healthcare Analytics - Digital Devices" }
+  ];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Carousel */}
+      <div className="absolute inset-0">
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+          className="w-full h-full"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent className="h-full">
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index} className="relative h-full">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${image.src})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/80 via-primary/70 to-primary-dark/80" />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+
+      {/* Background Pattern Overlay */}
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute top-20 left-10 w-72 h-72 border border-white/20 rounded-full"></div>
         <div className="absolute top-40 right-20 w-96 h-96 border border-white/10 rounded-full"></div>
         <div className="absolute bottom-20 left-1/4 w-64 h-64 border border-white/15 rounded-full"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Advanced Digital Solutions for
