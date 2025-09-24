@@ -59,11 +59,20 @@ const About = () => {
               </Button>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-card rounded-2xl p-8 border border-border/50 shadow-card">
-                <div className="w-full h-full bg-primary/10 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-primary mb-4">10+ Years</h3>
-                    <p className="text-foreground">Of Innovation Excellence</p>
+              <div className="aspect-square bg-gradient-card rounded-2xl p-8 border border-border/50 shadow-card overflow-hidden">
+                <div 
+                  className="w-full h-full rounded-xl flex items-center justify-center relative"
+                  style={{
+                    backgroundImage: `url('/src/assets/10-years-bg.ai')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                  }}
+                >
+                  <div className="absolute inset-0 bg-primary/20 rounded-xl"></div>
+                  <div className="text-center relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-lg">10+ Years</h3>
+                    <p className="text-white drop-shadow-md">Of Innovation Excellence</p>
                   </div>
                 </div>
               </div>
