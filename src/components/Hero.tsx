@@ -5,12 +5,16 @@ import Autoplay from "embla-carousel-autoplay";
 import heroTank from "@/assets/hero-tank.jpg";
 import heroSatellite from "@/assets/hero-satellite.jpg";
 import heroHealthcare from "@/assets/hero-healthcare.jpg";
+import heroMechanic from "@/assets/hero-mechanic.jpg";
+import heroChip from "@/assets/hero-chip.jpg";
 
 const Hero = () => {
   const heroImages = [
     { src: heroTank, alt: "Defense Technology - Battle Tank" },
     { src: heroSatellite, alt: "Satellite Technology - GPS Systems" },
-    { src: heroHealthcare, alt: "Healthcare Analytics - Digital Devices" }
+    { src: heroHealthcare, alt: "Healthcare Analytics - Digital Devices" },
+    { src: heroMechanic, alt: "Automotive Technology - Digital Diagnostics" },
+    { src: heroChip, alt: "Advanced Electronics - Smart Processor Technology" }
   ];
 
   return (
