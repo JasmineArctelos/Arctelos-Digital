@@ -135,19 +135,19 @@ const ProductsSection = () => {
                 <p className="text-sm text-foreground">{product.applications}</p>
               </div>
 
-              <Button variant="outline" className="w-full group">
+              {/* <Button variant="outline" className="w-full group">
                 Learn More
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+              </Button> */}
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="group">
+          {/* <Button variant="hero" size="lg" className="group">
             View All Products
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

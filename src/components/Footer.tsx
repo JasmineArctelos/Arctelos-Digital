@@ -69,27 +69,48 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+         {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
+              {/* Email */}
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-primary" />
                 <span className="text-white/80">info@arctelos.com</span>
               </div>
+
+              {/* Phone */}
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-primary" />
-                <span className="text-white/80">+1 (555) 123-4567</span>
+                <span className="text-white/80">+91 98765 43210</span>
               </div>
+
+              {/* Office Address */}
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-primary mt-1" />
                 <span className="text-white/80">
-                  123 Technology Drive<br />
-                  Innovation Park, Tech City 12345
+                  <strong>Office:</strong><br />
+                  Plot #9, Karpagam Nagar<br />
+                  Thirumudivakkam<br />
+                  Chennai - 600044<br />
+                  Tamil Nadu, India
+                </span>
+              </div>
+
+              {/* Factory Address */}
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 mr-3 text-primary mt-1" />
+                <span className="text-white/80">
+                  <strong>Factory:</strong><br />
+                  #21, SIDCO Industrial Area<br />
+                  Karuppur<br />
+                  Salem - 636011<br />
+                  Tamil Nadu, India
                 </span>
               </div>
             </div>
           </div>
+
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">

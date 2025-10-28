@@ -137,7 +137,7 @@ const ServicesSection = () => {
             Let's discuss how our expertise can help bring your digital device concepts to life. 
             Contact us for a consultation.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="professional" size="lg" className="group">
               Get Consultation
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -145,7 +145,7 @@ const ServicesSection = () => {
             <Button variant="outline" size="lg" className="border-white/30 text-white bg-transparent hover:bg-white/10 hover:text-primary">
               View Portfolio
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

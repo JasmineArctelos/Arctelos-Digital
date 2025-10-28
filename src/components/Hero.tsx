@@ -69,10 +69,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="professional" size="xl" className="group">
+            {/* <Button variant="professional" size="xl" className="group">
               Explore Products
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
+            </Button> */}
             <Button variant="outline" size="xl" className="border-white/30 text-white bg-transparent hover:bg-white/10 hover:text-primary">
               Contact Us
             </Button>
